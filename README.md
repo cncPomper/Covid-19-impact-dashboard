@@ -1,6 +1,17 @@
 # Covid-19-impact-dashboard
 
+Problem statement
+Develop a dashboard with two tiles by (with my progress):
+
+- [x] Selecting a dataset of interest
+- [] Creating a pipeline for processing this dataset and putting it to a datalake
+- [] Creating a pipeline for moving the data from the lake to a data warehouse
+- [] Transforming the data in the data warehouse: prepare it for the dashboard
+- [] Building a dashboard to visualize the data
+
 ## Table of Content
+
+
 
 ### Setting up VM
 
