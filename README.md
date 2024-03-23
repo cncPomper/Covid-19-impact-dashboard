@@ -62,7 +62,8 @@ sudo apt-get update
 ```bash
 sudo apt-get install docker.io
 ```
-Follow [this](https://github.com/sindresorhus/guides/blob/main/docker-without-sudo.md) instruction in order to run docker on VM without sudo permission
+
+Follow <a href="https://github.com/sindresorhus/guides/blob/main/docker-without-sudo.md" target="_blank">this</a> instruction in order to run docker on VM without sudo permission
 
 Test if docker installed succesfully
 ```bash
@@ -117,4 +118,4 @@ pip install pgcli
 ## Columns description
 
 ## Sources
-I have used data from this [dataset](https://www.kaggle.com/datasets/sudalairajkumar/novel-corona-virus-2019-dataset). 
+I have used data from this <a href="https://www.kaggle.com/datasets/sudalairajkumar/novel-corona-virus-2019-dataset" target="_blank">dataset</a>
