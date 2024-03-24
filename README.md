@@ -109,13 +109,30 @@ To check running containers
 docker ps
 ```
 
+2. Install terraform
+
+```bash
+wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+sudo apt update && sudo apt install terraform
+```
+
 <!-- 2. Install pgcli
 
 ```bash
 pip install pgcli
 ``` -->
 
+### Download data
+Probably the most convienent way of download this particular dataset is by manually downloading it from <a href="https://www.kaggle.com/datasets/sudalairajkumar/novel-corona-virus-2019-dataset" target="_blank">kaggle</a> and then:
+- unzip in the `/data` directory
+
+
 ## Columns description
 
 ## Sources
+
+Creating a pipeline for processing this dataset and putting it to a datalake
+<a href="./md/processing_and_putting_to_datalake.md" target="_blank">Creating a pipeline for processing this dataset and putting it to a datalake</a>
+
 I have used data from this <a href="https://www.kaggle.com/datasets/sudalairajkumar/novel-corona-virus-2019-dataset" target="_blank">dataset</a>
