@@ -101,7 +101,7 @@ source .bashrc
 
 Now to check if everything works run
 ```bash
-./docker-compose version
+docker-compose version
 ```
 
 To check running containers
