@@ -117,6 +117,55 @@ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://
 sudo apt update && sudo apt install terraform
 ```
 
+### Configuring GCP for terraform
+
+1. Terraform setup
+- Go to `IAM & Admin` > `Service Accounts`
+- Click on the top button `CREATE SERVICE ACCOUNT`
+    - name : covid-project
+    - service account access :
+        - `Cloud Storage` > `Storage Admin`
+        - `BigQuery` > `BigQuery Admin`
+        - `Compute Engine` > `Compute Admin`
+
+- Go to `IAM & Admin` > `Service Accounts` > Service account you just created > `Manage keys`
+    - Add key > Create new Json key (This will download the key on system)
+
+- Create directory for GCP keys
+
+```bash
+mkdir keys
+cd keys
+```
+
+- Put downloaded key to `keys` folder
+
+### Terraform
+
+1. Run
+
+```bash
+terraform init
+```
+
+```bash
+terraform plan
+```
+
+Run to create resources in the cloud
+
+```bash
+terraform apply
+```
+
+Destroy resources configured by terraform
+
+```bash
+terraform destroy
+```
+
+
+
 <!-- 2. Install pgcli
 
 ```bash
