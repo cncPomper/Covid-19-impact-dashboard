@@ -5,7 +5,7 @@ variable "credentials" {
 
 variable "location" {
   description = "Project location"
-  default     = "EU"
+  default     = "EUROPE-WEST1"
 }
 
 variable "project" {
@@ -17,12 +17,12 @@ variable "project" {
 variable "region" {
   description = "Region"
   type        = string
-  default     = "europe-west1-b"
+  default     = "EUROPE-WEST1"
 }
 
 variable "BQ_dataset_name" {
   description = "Covid-19 dashboard project"
-  default     = "covid_dataset"
+  default     = "covid_project_dataset"
 }
 
 variable "GCS_bucket_name" {
