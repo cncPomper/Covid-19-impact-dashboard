@@ -20,7 +20,7 @@ resource "google_bigquery_dataset" "covid_project_dataset" {
 }
 
 resource "google_storage_bucket" "covid_data_lake_bucket" {
-  name     = "${var.project}_235_project" # Concatenating DL bucket & Project name for unique naming
+  name     = "precise-rite-412717_235_project" # Concatenating DL bucket & Project name for unique naming
   location = var.region
 
   # Optional, but recommended settings:
