@@ -4,10 +4,15 @@ Problem statement
 Develop a dashboard with two tiles by (with my progress):
 
 - [x] Selecting a dataset of interest
-- [ ] Creating a pipeline for processing this dataset and putting it to a datalake
-- [ ] Creating a pipeline for moving the data from the lake to a data warehouse
-- [ ] Transforming the data in the data warehouse: prepare it for the dashboard
-- [ ] Building a dashboard to visualize the data
+- [x] Creating a pipeline for processing this dataset and putting it to a datalake
+- [x] Creating a pipeline for moving the data from the lake to a data warehouse
+- [x] Transforming the data in the data warehouse: prepare it for the dashboard
+- [x] Building a dashboard to visualize the data
+
+### [The resulting covid dashboard](https://lookerstudio.google.com/reporting/b3fbe0b9-3c01-41e4-bac0-76368d3b529b)
+
+![de-project-pipeline](./img/de_project_pipeline.png)
+
 
 ## Table of Content
 
@@ -43,7 +48,7 @@ in order to generate ssh key pair
     ssh -i ~/.ssh/covid_project_gcp cncPomper@EXTERNAL_IP_ADDRESS_OF_VM
     ```
 
-> **_NOTE:_**  To make our lives easier we could create a `Host` profile in `.ssh/config` 
+> **_NOTE:_**  To make our lives easier we could create a `Host` profile in `.ssh/config`
 ```
 Host covid-project
     HostName EXTERNAL_IP_ADDRESS_OF_VM
@@ -52,6 +57,21 @@ Host covid-project
 ```
 
 ### Installing needed packages
+
+1. Install Anaconda
+
+```bash
+wget https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Linux-x86_64.sh
+```
+
+```bash
+bash Anaconda3-2024.02-1-Linux-x86_64.sh
+```
+
+Run `.bashrc` (If you decided to run conda init during installation)
+```bash
+source .bashrc
+```
 
 1. Install docker
 
@@ -165,23 +185,19 @@ terraform destroy
 ```
 
 
-
-<!-- 2. Install pgcli
-
-```bash
-pip install pgcli
-``` -->
-
 ### Download data
 Probably the most convienent way of download this particular dataset is by manually downloading it from <a href="https://www.kaggle.com/datasets/sudalairajkumar/novel-corona-virus-2019-dataset" target="_blank">kaggle</a> and then:
 - unzip in the `/data` directory
+
+## The rest of the content
+
+### [Processing data and putting it to datalake](./md/processing_and_putting_to_datalake.md)
+### [Processing and putting data to data warehouse](./md/process_and_put_to_bg.md)
+### [Processing data in dbt and analytics](./md/processing_in_dbt.md)
 
 
 ## Columns description
 
 ## Sources
-
-Creating a pipeline for processing this dataset and putting it to a datalake
-<a href="./md/processing_and_putting_to_datalake.md" target="_blank">Creating a pipeline for processing this dataset and putting it to a datalake</a>
 
 I have used data from this <a href="https://www.kaggle.com/datasets/sudalairajkumar/novel-corona-virus-2019-dataset" target="_blank">dataset</a>
