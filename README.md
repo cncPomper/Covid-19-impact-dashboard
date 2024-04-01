@@ -6,10 +6,13 @@ Develop a dashboard with two tiles by (with my progress):
 - [x] Selecting a dataset of interest
 - [x] Creating a pipeline for processing this dataset and putting it to a datalake
 - [x] Creating a pipeline for moving the data from the lake to a data warehouse
-- [ ] Transforming the data in the data warehouse: prepare it for the dashboard
-- [ ] Building a dashboard to visualize the data
+- [x] Transforming the data in the data warehouse: prepare it for the dashboard
+- [x] Building a dashboard to visualize the data
 
-[The resulting covid dashboard](https://lookerstudio.google.com/reporting/b3fbe0b9-3c01-41e4-bac0-76368d3b529b)
+### [The resulting covid dashboard](https://lookerstudio.google.com/reporting/b3fbe0b9-3c01-41e4-bac0-76368d3b529b)
+
+![de-project-pipeline](./img/de_project_pipeline.png)
+
 
 ## Table of Content
 
