@@ -9,6 +9,8 @@ Develop a dashboard with two tiles by (with my progress):
 - [ ] Transforming the data in the data warehouse: prepare it for the dashboard
 - [ ] Building a dashboard to visualize the data
 
+[The resulting covid dashboard](https://lookerstudio.google.com/reporting/b3fbe0b9-3c01-41e4-bac0-76368d3b529b)
+
 ## Table of Content
 
 
