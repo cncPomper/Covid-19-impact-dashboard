@@ -185,30 +185,19 @@ terraform destroy
 ```
 
 
-## [Processing data and putting it to datalake](./md/processing_and_putting_to_datalake.md)
-
-<!-- <a href="./md/processing_and_putting_to_datalake.md" target="_blank">Processing data and putting it to datalake</a> -->
-
-### Mage
-
-
-
-<!-- 2. Install pgcli
-
-```bash
-pip install pgcli
-``` -->
-
 ### Download data
 Probably the most convienent way of download this particular dataset is by manually downloading it from <a href="https://www.kaggle.com/datasets/sudalairajkumar/novel-corona-virus-2019-dataset" target="_blank">kaggle</a> and then:
 - unzip in the `/data` directory
+
+## The rest of the content
+
+### [Processing data and putting it to datalake](./md/processing_and_putting_to_datalake.md)
+### [Processing and putting data to data warehouse](./md/process_and_put_to_bg.md)
+### [Processing data in dbt and analytics](./md/processing_in_dbt.md)
 
 
 ## Columns description
 
 ## Sources
-
-Creating a pipeline for processing this dataset and putting it to a datalake
-<a href="./md/processing_and_putting_to_datalake.md" target="_blank">Creating a pipeline for processing this dataset and putting it to a datalake</a>
 
 I have used data from this <a href="https://www.kaggle.com/datasets/sudalairajkumar/novel-corona-virus-2019-dataset" target="_blank">dataset</a>
