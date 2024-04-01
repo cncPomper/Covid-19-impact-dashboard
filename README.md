@@ -4,8 +4,8 @@ Problem statement
 Develop a dashboard with two tiles by (with my progress):
 
 - [x] Selecting a dataset of interest
-- [ ] Creating a pipeline for processing this dataset and putting it to a datalake
-- [ ] Creating a pipeline for moving the data from the lake to a data warehouse
+- [x] Creating a pipeline for processing this dataset and putting it to a datalake
+- [x] Creating a pipeline for moving the data from the lake to a data warehouse
 - [ ] Transforming the data in the data warehouse: prepare it for the dashboard
 - [ ] Building a dashboard to visualize the data
 
@@ -43,7 +43,7 @@ in order to generate ssh key pair
     ssh -i ~/.ssh/covid_project_gcp cncPomper@EXTERNAL_IP_ADDRESS_OF_VM
     ```
 
-> **_NOTE:_**  To make our lives easier we could create a `Host` profile in `.ssh/config` 
+> **_NOTE:_**  To make our lives easier we could create a `Host` profile in `.ssh/config`
 ```
 Host covid-project
     HostName EXTERNAL_IP_ADDRESS_OF_VM
@@ -52,6 +52,21 @@ Host covid-project
 ```
 
 ### Installing needed packages
+
+1. Install Anaconda
+
+```bash
+wget https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Linux-x86_64.sh
+```
+
+```bash
+bash Anaconda3-2024.02-1-Linux-x86_64.sh
+```
+
+Run `.bashrc` (If you decided to run conda init during installation)
+```bash
+source .bashrc
+```
 
 1. Install docker
 
@@ -163,6 +178,13 @@ Destroy resources configured by terraform
 ```bash
 terraform destroy
 ```
+
+
+## [Processing data and putting it to datalake](./md/processing_and_putting_to_datalake.md)
+
+<!-- <a href="./md/processing_and_putting_to_datalake.md" target="_blank">Processing data and putting it to datalake</a> -->
+
+### Mage
 
 
 
