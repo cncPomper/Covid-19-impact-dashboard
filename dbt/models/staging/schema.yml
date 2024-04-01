@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: staging
+    database: precise-rite-412717
+    schema: covid_data
+
+    tables:
+      - name: data
+      - name: deaths
+      - name: recovered
+      - name: confirmed
